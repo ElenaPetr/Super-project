@@ -1,0 +1,15 @@
+<div class="container">
+	<div class="row" >
+		<div class="col-sm-6 col-md-4" *ngFor="let photo of medi" [class.selected]="photo === selectedPhoto">
+			<div class ="thumbnail">
+				<img src="{{photo.url}}" alt="..."/>
+				<div class="caption">
+					<h6>{{photo.description| uppercase}}</h6>
+					<p> <i class="fa fa-edit fa-2x" (click)="onSelect(photo)"></i> <i class="fa fa-trash-o fa-2x" (click) ="delete(photo); $event.stopPropagation()"></i>
+					</p>
+				</div>
+			</div>
+		</div>
+		<ngbd-modal-component></ngbd-modal-component>
+
+	</div>
