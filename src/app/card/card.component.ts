@@ -2,8 +2,8 @@ import { Component,OnInit }	from '@angular/core';
 import { Router }			from '@angular/router';
 import { UUID }				from 'angular2-uuid';
 
-import { Media }			from '../media';
-import { MediaService }		from '../media.service';
+import { Media }			from '../list/media';
+import { MediaService }		from '../service/media.service';
  
 @Component({
   selector: 'my-card',

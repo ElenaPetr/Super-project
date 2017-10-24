@@ -1,14 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
-import { InMemoryDataService }  from './in-memory-data.service';
+import { InMemoryDataService }  from './list/in-memory-data.service';
 import { HttpModule }    from '@angular/http';
 import { UUID } from 'angular2-uuid';
 import { AppRoutingModule }     from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { CardComponent } from './card/card.component';
-import { MediaService }	from './media.service';
+import { MediaService }	from './service/media.service';
 
 @NgModule({
   declarations: [
