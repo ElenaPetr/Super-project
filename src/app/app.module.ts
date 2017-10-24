@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService }  from './in-memory-data.service';
 import { HttpModule }    from '@angular/http';
-
+import { UUID } from 'angular2-uuid';
 
 import { AppComponent } from './app.component';
 import { CardComponent } from './card/card.component';

@@ -3,6 +3,7 @@ import { Headers, Http } from '@angular/http';
 import 'rxjs/add/operator/toPromise';
 import {Media} from './media';
 
+
 @Injectable()
 export class MediaService {
 
@@ -58,5 +59,4 @@ private headers = new Headers({'Content-Type': 'application/json'});
   return Promise.reject(error.message || error);
 }
   
-}
 }
