@@ -1,15 +1,15 @@
 import { Component,OnInit }	from '@angular/core';
-import { Router }					from '@angular/router';
-import { UUID }						from 'angular2-uuid';
+import { Router }			from '@angular/router';
+import { UUID }				from 'angular2-uuid';
 
-import { Media }						from './media';
-import { MediaService }			from './media.service';
+import { Media }			from '../media';
+import { MediaService }		from './media.service';
  
 @Component({
-  selector: 'my-media',
-  templateUrl: './media.component.html',
+  selector: 'my-card',
+  templateUrl: './card.component.html',
 })
-export class MediaComponent implements OnInit{
+export class CardComponent implements OnInit{
 	medi:Media[];
 	selectedPhoto:Media;
 	
