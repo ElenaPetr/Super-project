@@ -1,0 +1,31 @@
+<div class="modal-header">
+	<h4 class="modal-title">update media</h4>
+	<button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+		<span aria-hidden="true">&times;</span>
+	</button>
+</div>
+<div class="modal-body">
+
+	<div  *ngIf="photo" class="update">
+		<h2>update media</h2>
+
+		<div>
+			<label>Url:</label>
+		</div>
+		<div>
+			<input [(ngModel)]="photo.url" placeholder="url"/>
+		</div>
+		<div>
+			<label for id="description-field">Description:</label>
+		</div>
+		<div>
+			<input  [(ngModel)]="photo.description" id="description-field"/>
+		</div>
+
+	</div>
+</div>
+
+<div class="modal-footer">
+	<button class="btn btn-secondary" (click)="save()">update</button>
+	<button type="button" class="btn btn-secondary" (click)="activeModal.close('Close click')">close</button>
+</div>
