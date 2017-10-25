@@ -13,6 +13,7 @@ import { CardComponent } from './card/card.component';
 import { MediaService }	from './service/media.service';
 import { ModalUpdateComponent } from './modal-update/modal-update.component';
 import { ModalAddComponent } from './modal-add/modal-add.component';
+import { AddContentComponent } from './modal-add/add-content/add-content.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { ModalAddComponent } from './modal-add/modal-add.component';
     CardComponent,
     ModalUpdateComponent,
     ModalAddComponent,
+    AddContentComponent,
   ],
   imports: [
     BrowserModule,
@@ -30,7 +32,7 @@ import { ModalAddComponent } from './modal-add/modal-add.component';
     AppRoutingModule,
     NgbModule.forRoot() 
   ],
-   entryComponents: [ModalUpdateComponent],
+   entryComponents: [ModalUpdateComponent,AddContentComponent],
   providers: [MediaService],
   bootstrap: [AppComponent]
 })

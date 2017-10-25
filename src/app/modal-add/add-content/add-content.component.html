@@ -1,0 +1,26 @@
+<div class="modal-header">
+	<h4 class="modal-title">ADD NEW MEDIA</h4>
+	<button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+		<span aria-hidden="true">&times;</span>
+	</button>
+</div>
+
+<div class="modal-body">
+	<form [formGroup]="mediaForm" novalidate>
+		<div class="form-group">
+			<label class="center-block">
+				Url:
+				<input class="form-control" formControlUrl="url" #mediaUrl value="https://unsplash.it/300/400/?image=1"></label>
+			<br>
+			<br>
+			<label class="center-block">
+				Description:
+				<input class="form-control" formControlDescription="description" #mediaDescription value="nice description"></label>
+		</div>
+	</form>
+</div>
+
+<div class="modal-footer">
+	<button class="btn btn-secondary" (click)="add(mediaUrl.value,mediaDescription.value); mediaUrl.value=''; mediaDescription.value=''">add</button>
+	<button type="button" class="btn btn-secondary" (click)="activeModal.close('Close click')">Close</button>
+</div>
