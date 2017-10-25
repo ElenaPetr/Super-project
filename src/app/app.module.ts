@@ -12,12 +12,14 @@ import { AppComponent } from './app.component';
 import { CardComponent } from './card/card.component';
 import { MediaService }	from './service/media.service';
 import { ModalUpdateComponent } from './modal-update/modal-update.component';
+import { ModalAddComponent } from './modal-add/modal-add.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CardComponent,
     ModalUpdateComponent,
+    ModalAddComponent,
   ],
   imports: [
     BrowserModule,
