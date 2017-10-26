@@ -15,22 +15,20 @@ import { UUID } from 'angular2-uuid';
 
 export class AddContentComponent implements OnInit {
 	medi:Media[]=[];
-mediaForm: FormGroup; 
-
-  
-
-  createForm() {
-    this.mediaForm = this.fb.group({
-      url: '', 
-	  description:''
-    });
-  }
+addForm: FormGroup; 
 
   constructor(public activeModal: NgbActiveModal,
   private mediaService: MediaService,
   private router:Router,
   private fb: FormBuilder) { 
     this.createForm(); 
+  }
+
+  createForm() {
+    this.addForm = this.fb.group({
+    url: '', 
+    description:''
+    });
   }
 
   ngOnInit() {}
@@ -48,5 +46,4 @@ mediaForm: FormGroup;
         this.medi.push(media);
       });
   }
-
 }

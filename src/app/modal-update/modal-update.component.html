@@ -4,28 +4,25 @@
 		<span aria-hidden="true">&times;</span>
 	</button>
 </div>
+
 <div class="modal-body">
+	<div >
+		<form [formGroup]="mediaForm" novalidate class="update">
+			<div  class="form-group">
+				<label class="center-block">
+					Url:
+					<input *ngIf="photo" [(ngModel)]="photo.url" class="form-control" formControlName="url"></label>
+			</div>
 
-	<div  *ngIf="photo" class="update">
-		<h2>update media</h2>
-
-		<div>
-			<label>Url:</label>
-		</div>
-		<div>
-			<input [(ngModel)]="photo.url" placeholder="url"/>
-		</div>
-		<div>
-			<label for id="description-field">Description:</label>
-		</div>
-		<div>
-			<input  [(ngModel)]="photo.description" id="description-field"/>
-		</div>
-
+			<div class="form-group">
+				<label class="center-block">
+					Description:
+					<input *ngIf="photo" [(ngModel)]="photo.description" class="form-control" formControlName="description"></label>
+			</div>
+		</form>
 	</div>
 </div>
-
 <div class="modal-footer">
-	<button class="btn btn-secondary" (click)="save()">update</button>
-	<button type="button" class="btn btn-secondary" (click)="activeModal.close('Close click')">close</button>
+	<button type="button" class="btn btn-secondary" (click)="save()">update</button>
+	<button type="button" class="btn btn-secondary" (click)="activeModal.close('Close click')">Close</button>
 </div>

@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule, ReactiveFormsModule,FormGroup,FormControl,FormBuilder}   from '@angular/forms';
+import { FormsModule,ReactiveFormsModule,FormGroup,FormControl,FormBuilder,Validator}   from '@angular/forms';
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService }  from './list/in-memory-data.service';
 import { HttpModule }    from '@angular/http';
@@ -27,12 +27,12 @@ import { AddContentComponent } from './modal-add/add-content/add-content.compone
     BrowserModule,
 	HttpModule,
 	FormsModule,
-	ReactiveFormsModule,
-    InMemoryWebApiModule.forRoot(InMemoryDataService),
-    AppRoutingModule,
-    NgbModule.forRoot() 
+  ReactiveFormsModule,
+  InMemoryWebApiModule.forRoot(InMemoryDataService),
+  AppRoutingModule,
+  NgbModule.forRoot() 
   ],
-   entryComponents: [ModalUpdateComponent,AddContentComponent],
+   entryComponents: [AddContentComponent,ModalUpdateComponent],
   providers: [MediaService],
   bootstrap: [AppComponent]
 })
