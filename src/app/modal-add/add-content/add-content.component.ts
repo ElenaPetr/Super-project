@@ -45,5 +45,6 @@ addForm: FormGroup;
 	  console.log(media);
         this.medi.push(media);
       });
+      this.activeModal.close(AddContentComponent);
   }
 }

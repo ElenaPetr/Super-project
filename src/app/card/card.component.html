@@ -1,7 +1,7 @@
-<div class="container">
+<div class="container-fluid">
 	<div class="row" >
 		<div class="col-sm-6 col-md-4" *ngFor="let photo of medi" [class.selected]="photo === selectedPhoto">
-			<div class ="thumbnail">
+			<div class ="thumbnail media">
 				<img src="{{photo.url}}" alt="..."/>
 				<div class="caption">
 					<h6>{{photo.description| uppercase}}</h6>
@@ -13,3 +13,4 @@
 		 
 <app-modal-add></app-modal-add>
 	</div>
+</div>	

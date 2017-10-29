@@ -1,0 +1,16 @@
+*{
+
+transition: .5s ease-in-out .1s;
+}
+
+input{
+	width:468px;
+
+}
+
+input:focus {
+	background-color:gainsboro;
+	outline: none;
+	border-color:none;
+	box-shadow: none;
+} 

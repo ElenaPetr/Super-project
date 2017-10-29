@@ -1,9 +1,8 @@
 import 'rxjs/add/operator/switchMap';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, ParamMap } from '@angular/router';
-import { Location }                 from '@angular/common';
 import { FormsModule,FormGroup,FormBuilder,FormControl,Validators }   from '@angular/forms';
-
+import {NgbModal, NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
 import { Media }        from '../list/media';
 import { MediaService } from '../service/media.service';
 
@@ -19,9 +18,9 @@ export class ModalUpdateComponent implements OnInit {
  mediaForm:FormGroup;
   
   constructor(
+    public activeModal: NgbActiveModal,
     private mediaService: MediaService,
     private route: ActivatedRoute,
-    private location: Location,
     private fb:FormBuilder) {this.createForm();}
   
   createForm() {
@@ -39,10 +38,8 @@ export class ModalUpdateComponent implements OnInit {
   
   save(): void {
     this.mediaService.update(this.photo)
-      .then(() => this.goBack());
+      // .then(() => this.activeModal.close(ModalUpdateComponent));
   }
 
-  goBack(): void {
-    this.location.back();
-  }
+  
 }

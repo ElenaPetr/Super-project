@@ -9,6 +9,7 @@ import { ModalUpdateComponent } from '../modal-update/modal-update.component';
 @Component({
   selector: 'my-card',
   templateUrl: './card.component.html',
+  styleUrls:['./card.component.css']
 })
 export class CardComponent implements OnInit{
 	medi:Media[];

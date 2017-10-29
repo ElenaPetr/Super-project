@@ -7,7 +7,7 @@
 
 <div class="modal-body">
 	<div >
-		<form [formGroup]="mediaForm" novalidate class="update">
+		<form [formGroup]="mediaForm" novalidate>
 			<div  class="form-group">
 				<label class="center-block">
 					Url:
@@ -17,7 +17,7 @@
 			<div class="form-group">
 				<label class="center-block">
 					Description:
-					<input *ngIf="photo" [(ngModel)]="photo.description" class="form-control" formControlName="description"></label>
+					<input *ngIf="photo" [(ngModel)]="photo.description" class="form-control" formControlName="description" ></label>
 			</div>
 		</form>
 	</div>
