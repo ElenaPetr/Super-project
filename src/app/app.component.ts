@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'my-app',
   template:`
     <nav>
-      <a routerLink="/card" routerLinkActive="active">Media</a>
+      <a routerLink="/list" routerLinkActive="active">Media</a>
     </nav>
     <router-outlet></router-outlet>
   ` 

@@ -1,0 +1,9 @@
+<div class="container-fluid">
+	<div class="row" >
+		<div class="col-sm-6 col-md-4" *ngFor="let photo of medi" [class.selected]="photo=== selectedPhoto">
+			<my-card [photo]="photo"></my-card>
+		</div>
+	</div>
+	<app-modal-add></app-modal-add>
+
+</div>

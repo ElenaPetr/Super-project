@@ -4,7 +4,7 @@ import {NgbModal, NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
 
 
 import { MediaService }         from '../service/media.service';
-import {Media} 					from '../list/media';
+import {Media} 					from '../media';
 import { CardComponent}         from '../card/card.component';
 import { AddContentComponent }	from './add-content/add-content.component';
 

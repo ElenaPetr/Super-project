@@ -1,13 +1,7 @@
-
-.col-sm-6, .col-md-4 {
-padding-right: 32px;
-padding-left: 32px;
-}
-
- .media {
+.media {
  display:block;
  margin: 0 28px 40px 28px;
- float:left;
+ /*float:left;*/
  border-radius:5px;
 box-shadow:0 8px 15px rgba(0,0,0,.6);
 width:300px;
@@ -25,7 +19,6 @@ background-color:white;
 position:relative;
 top:-95px;
 opacity:0.6;
-
 }
 
 .caption:hover {
@@ -40,10 +33,6 @@ margin: 0;
 
 p{
 	margin: 0;
-}
-
-a {
-text-decoration:none;
 }
 
 .fa {

@@ -1,19 +1,10 @@
 import { NgModule }             from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
-
-import { CardComponent }      from './card/card.component';
-//import { ModalUpdateComponent } from './modal-update/modal-update.component';
-
+import { ListComponent }      from './list/list.component';
 
 const routes: Routes = [
- { path: '', redirectTo: '/card', pathMatch: 'full' },
- { path: 'card',     component: CardComponent },
-  //{ path: 'update/:id', component: ModalUpdateComponent },
-
- 
- 
-
+ { path: '', redirectTo: '/list', pathMatch: 'full' },
+ { path: 'list',     component: ListComponent },
 ];
 
 @NgModule({

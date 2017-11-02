@@ -2,7 +2,7 @@ import {Component,NgModule,OnInit} from '@angular/core';
 import { Router }            	from '@angular/router';
 import {NgbModal, NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
 import { MediaService }         from '../../service/media.service';
-import {Media} from '../../list/media';
+import {Media} from '../../media';
 import { FormsModule, ReactiveFormsModule,FormGroup,FormControl,FormBuilder}   from '@angular/forms';
 import 'rxjs/add/operator/toPromise';
 import { UUID } from 'angular2-uuid';

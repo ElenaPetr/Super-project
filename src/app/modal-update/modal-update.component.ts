@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, ParamMap } from '@angular/router';
 import { FormsModule,FormGroup,FormBuilder,FormControl,Validators }   from '@angular/forms';
 import {NgbModal, NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
-import { Media }        from '../list/media';
+import { Media }        from '../media';
 import { MediaService } from '../service/media.service';
 
 
